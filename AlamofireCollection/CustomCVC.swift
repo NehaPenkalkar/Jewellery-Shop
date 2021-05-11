@@ -9,7 +9,5 @@ import UIKit
 
 class CustomCVC: UICollectionViewCell {
     @IBOutlet weak var imgV: UIImageView!
-    @IBOutlet weak var idLbl: UILabel!
     @IBOutlet weak var nameLbl: UILabel!
-    
 }

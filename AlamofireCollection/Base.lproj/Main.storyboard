@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -34,12 +35,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="224" height="296"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxi-w2-NCM">
-                                                    <rect key="frame" x="16" y="235" width="192" height="20"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" red="0.069114015341953244" green="0.10953954016630374" blue="0.082851492487023684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaJ-f5-qAK">
                                                     <rect key="frame" x="16" y="260" width="192" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -47,30 +42,22 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="00q-O4-3Uc">
-                                                    <rect key="frame" x="23" y="10" width="178" height="177.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="00q-O4-3Uc" secondAttribute="height" multiplier="1:1" id="dME-vZ-OLa"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="22.5" y="10" width="179" height="240"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="00q-O4-3Uc" firstAttribute="height" secondItem="Y15-pG-JRI" secondAttribute="height" multiplier="0.6" id="8Vv-dL-E5g"/>
-                                                <constraint firstItem="BaJ-f5-qAK" firstAttribute="leading" secondItem="Dxi-w2-NCM" secondAttribute="leading" id="Q2P-WR-eYX"/>
+                                                <constraint firstItem="BaJ-f5-qAK" firstAttribute="leading" secondItem="Y15-pG-JRI" secondAttribute="leading" constant="16" id="Amd-mW-pki"/>
+                                                <constraint firstItem="BaJ-f5-qAK" firstAttribute="top" secondItem="00q-O4-3Uc" secondAttribute="bottom" constant="10" id="Gtv-Dn-7je"/>
+                                                <constraint firstAttribute="trailing" secondItem="BaJ-f5-qAK" secondAttribute="trailing" constant="16" id="JKh-mx-iFS"/>
                                                 <constraint firstItem="00q-O4-3Uc" firstAttribute="centerX" secondItem="Y15-pG-JRI" secondAttribute="centerX" id="Rdo-lB-lkj"/>
-                                                <constraint firstItem="Dxi-w2-NCM" firstAttribute="leading" secondItem="Y15-pG-JRI" secondAttribute="leading" constant="16" id="Sya-5Z-aVD"/>
-                                                <constraint firstItem="Dxi-w2-NCM" firstAttribute="centerX" secondItem="00q-O4-3Uc" secondAttribute="centerX" id="Wjd-AK-e7g"/>
-                                                <constraint firstItem="BaJ-f5-qAK" firstAttribute="trailing" secondItem="Dxi-w2-NCM" secondAttribute="trailing" id="ZOq-c3-bI8"/>
                                                 <constraint firstItem="00q-O4-3Uc" firstAttribute="top" secondItem="Y15-pG-JRI" secondAttribute="top" constant="10" id="btQ-Qg-uCQ"/>
-                                                <constraint firstItem="BaJ-f5-qAK" firstAttribute="centerX" secondItem="Dxi-w2-NCM" secondAttribute="centerX" id="cga-Ta-KXS"/>
-                                                <constraint firstAttribute="trailing" secondItem="Dxi-w2-NCM" secondAttribute="trailing" constant="16" id="eTA-CW-qWV"/>
-                                                <constraint firstItem="BaJ-f5-qAK" firstAttribute="top" secondItem="Dxi-w2-NCM" secondAttribute="bottom" constant="5" id="fbo-Nc-04z"/>
+                                                <constraint firstItem="00q-O4-3Uc" firstAttribute="width" secondItem="Y15-pG-JRI" secondAttribute="width" multiplier="0.8" id="d80-8G-srh"/>
                                                 <constraint firstAttribute="bottom" secondItem="BaJ-f5-qAK" secondAttribute="bottom" constant="16" id="qxd-cu-slR"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.42585068939999998" green="0.65803170200000005" blue="0.49250590799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="224" height="296"/>
                                         <connections>
-                                            <outlet property="idLbl" destination="Dxi-w2-NCM" id="pKi-YR-kwm"/>
                                             <outlet property="imgV" destination="00q-O4-3Uc" id="KHt-vb-bQj"/>
                                             <outlet property="nameLbl" destination="BaJ-f5-qAK" id="HbP-Rg-05c"/>
                                         </connections>

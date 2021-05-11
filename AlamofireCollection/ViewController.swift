@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var brandCV: UICollectionView!
     var brandArr = [NSDictionary]()
     
+    var idSort = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,12 +60,12 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCVC", for: indexPath) as! CustomCVC
+        cell.layer.cornerRadius = 20
         
-        let a = brandArr[indexPath.row] as! NSDictionary
+        let a = brandArr[indexPath.row]
         let name = a.value(forKey: "brand_name") as? String ?? ""
         let id = a.value(forKey: "brand_id") as? String ?? ""
-        cell.nameLbl.text  = "\(name)"
-        cell.idLbl.text = "\(id)"
+        cell.nameLbl.text  = "\(id). \(name)"
         
         let img = a.value(forKey: "brand_image_path") as? String ?? ""
         let url = URL(string: "\(img)")
